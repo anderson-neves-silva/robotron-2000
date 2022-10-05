@@ -1,11 +1,11 @@
 :root {
     --main-cinza: #CCCCCC;
+    --main-vermelho: red;
+    --main-amarelo: yellow;
+    --main-azul: blue;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
-}
-
-* {
-    box-sizing: border-box;
+    --main-rosa: pink;
 }
 
 body {
@@ -35,14 +35,27 @@ main {
     margin: 0;
     flex-basis: 40%;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .robo {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -20%;
-    top: -5%;
+    left: -50%;
+}
+
+.botoes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 390px;
+}
+
+.alterar:hover {
+    background: var(--main-branco);
+    color: var(--main-preto);
 }
 
 .titulo {
@@ -51,11 +64,11 @@ main {
     font-size: 130px;
     position: absolute;
     bottom: 7rem;
-    left: -3rem;
+    left: -1rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgba(255,255,255,0.8);
 }
 
 .box {
@@ -133,6 +146,7 @@ main {
 
 .producao {
     margin-top: 1em;
+    margin-left: 5px;
     font-size: 2em;
     text-transform: uppercase;
     padding: 0.2em 1em;
@@ -207,6 +221,17 @@ main {
     order: 1;
     flex-basis: 35%;
     margin: 10px 0 0;
+}
+
+.alterar {
+    margin: 5px;
+    width: 250px;
+    padding: 1em;
+    border-radius: 15px;
+    background: var(--main-preto);
+    color: var(--main-branco);
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1600px) {
