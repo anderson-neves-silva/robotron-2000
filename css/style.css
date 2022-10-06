@@ -9,8 +9,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -49,14 +47,18 @@ main {
     height: 110%;
     z-index: 1;
     position: absolute;
-    left: -50%;
+    left: -20%;
 }
 
 .botoes {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left: 390px;
+    align-items: center;
+}
+
+.botoes h2 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .alterar:hover {
@@ -105,7 +107,7 @@ main {
 .peca-titulo {
     color: var(--main-branco);
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
 .controle {
@@ -231,12 +233,11 @@ main {
 
 .alterar {
     margin: 5px;
-    width: 250px;
+    width: 210px;
     padding: 1em;
-    border-radius: 15px;
     background: var(--main-preto);
     color: var(--main-branco);
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
